@@ -1,0 +1,121 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  color: #ffffff; 
+}
+li{
+  color:#ececec
+}
+
+p {
+  margin: 5px 0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  color: #ececec;
+}
+
+.job, .degree, .skills {
+  margin-bottom: 20px;
+  animation: fadeInLeft 1s ease-out;
+}
+
+.duration {
+  font-style: italic;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  animation: fadeInUp 1s ease-out;
+}
+
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+
+.details {
+  display: none;
+}
+
+.show-details {
+  display: block;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.starry-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: #000;
+  z-index: -1;
+}
+
+
+.stars {
+  width: 1px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
